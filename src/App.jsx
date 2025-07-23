@@ -19,7 +19,7 @@ function App() {
   const symbolsChars = '!@#$%^&*()_+[]{}<>?,./';
 
 
-  const generatePassword = () {
+  const generatePassword = () => {
     let chars = '';
     if (includeLower) chars+= lowercaseChars;
     if (includeUpper) chars+= uppercaseChars;
@@ -42,6 +42,13 @@ function App() {
     setPassword(newPassword);
     
   }
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(password)
+    .then(() => alert('Password copied!'))
+    .catch(err => console.error('Failed to copy:', err));
+  };
+
 
   return (
     <div>
