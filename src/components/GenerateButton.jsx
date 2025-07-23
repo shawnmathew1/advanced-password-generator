@@ -1,5 +1,5 @@
 export default function GenerateButton({ onGenerate }) {
     return(
-        <button onClick={onGenerate}>Generate Passwords</button>
+        <button onClick={onGenerate}>Generate Password</button>
     );
 }

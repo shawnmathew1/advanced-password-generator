@@ -1,7 +1,9 @@
+
+
 import { useState } from 'react';
 import PasswordDisplay from './components/PasswordDisplay';
-import PasswordOptions from './components/PasswordDisplay';
-import GenerateButton from './components/PasswordDisplay';
+import PasswordOptions from './components/PasswordOptions';
+import GenerateButton from './components/GenerateButton';
 import "./App.css";
 
 function App() {
@@ -70,3 +72,4 @@ function App() {
 }
 
 export default App;
+
