@@ -53,6 +53,18 @@ function App() {
   return (
     <div>
       <h1>Advanced Password Generator</h1>
+
+      <PasswordDisplay password={password} onCopy={copyToClipboard}/>
+
+      <PasswordOptions 
+      length={length} setLength={setLength}
+      includeLower={includeLower} setLower={setLower}
+      includeUpper={includeUpper} setUpper={setUpper}
+      includeNumbers={includeNumbers} setNumbers={setNumbers}
+      includeSymbols={includeSymbols} setSymbols={setSymbols}
+      />
+
+      <GenerateButton onGenerate={generatePassword}/>
     </div>
   );
 }
