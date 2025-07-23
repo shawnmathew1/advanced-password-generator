@@ -18,7 +18,30 @@ function App() {
   const numberChars = '0123456789';
   const symbolsChars = '!@#$%^&*()_+[]{}<>?,./';
 
-  
+
+  const generatePassword = () {
+    let chars = '';
+    if (includeLower) chars+= lowercaseChars;
+    if (includeUpper) chars+= uppercaseChars;
+    if (includeNumbers) chars+= numberChars;
+    if (includeSymbols) chars+= symbolsChars;
+
+
+    if (chars.length === 0) {
+      setPassword('Please select atleast one option!');
+      return;
+    }
+
+    let newPassword = '';
+
+    for (let i = 0; i < length; i++) {
+      const randomIndex = Math.floor(Math.random() * chars.length);
+      newPassword += chars[randomIndex]
+    }
+
+    setPassword(newPassword);
+    
+  }
 
   return (
     <div>
