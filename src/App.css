@@ -9,3 +9,63 @@ body {
     height: 100vh;
     color: #f0f0f0;
 }
+
+.app-container {
+    background: #1e1e1e;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.password-box {
+    font-size: 18px;
+    font-weight: bold;
+    background: #2a2a2a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    word-break: break-all;
+    color: #76c7ff
+}
+
+.settings-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.settings-container label {
+    display: block;
+    margin-bottom: 8px;
+    border: 1px solid #333;
+    border-radius: 5px; 
+    background: #2a2a2a;
+    color: #f0f0f0;
+}
+
+.settings-container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4338ca;
+}
